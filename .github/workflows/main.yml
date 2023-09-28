@@ -28,7 +28,7 @@ jobs:
       - name: Install Espanso
         run: brew install espanso
       - name: Start Espanso
-        run: espanso start
+        run: espanso service start --unmanaged
       - name: Log Espanso State (for debugging)
         run: espanso log
       - name: Run the default task
