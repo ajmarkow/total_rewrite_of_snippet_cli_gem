@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: mac-os-latest
+    runs-on: macos-latest
     name: Ruby ${{ matrix.ruby }}
     strategy:
       matrix:
