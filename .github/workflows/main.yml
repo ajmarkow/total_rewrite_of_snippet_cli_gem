@@ -28,7 +28,7 @@ jobs:
       - name: Install Espanso
         run: brew install espanso
       - name: Stop any running Espanso processes.
-        run: killall espanso
+        run: sudo killall espanso
       - name: Start Espanso
         run: espanso service start --unmanaged
       - name: Log Espanso State (for debugging)
