@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require "snippet_cli"
+require "Simplecov"
+SimpleCov.start
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
