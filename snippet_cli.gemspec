@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["AJ Markow"]
   spec.email = ["alexanderjmarkow@gmail.com"]
 
-  spec.summary = "This is a useful tool that helps you create valid YAML mappings for your Espanso configuration."
+  spec.summary = "This is a useful tool that helps you create and add valid YAML mappings to your Espanso configuration."
   spec.description = "Hi there! We've got a nifty tool that can help you add to your configuration files for https://espanso.org in a consistent and organized manner. It's really handy for keeping everything in order. Read the docs at https://l.ajm.codes/snippet_docs if you'd like us to show you how it works!"
   spec.homepage = "https://l.ajm.codes/snippet_cli"
   spec.license = "MIT"
@@ -36,7 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "tty-prompt"
   spec.add_dependency "tty-platform"
   spec.add_dependency "thor"
-  spec.add_dependency "colorize"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
