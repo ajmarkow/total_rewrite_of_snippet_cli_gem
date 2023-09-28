@@ -28,6 +28,9 @@ jobs:
       - name: Install Espanso
         run: brew install espanso
 # This is where it fails as of 9/28 10:15AM
+      - name: Check created directories
+        run: cd $HOME/'Application Support'/espanso/match/base.yml
+        run: ls -a
       - name: Start Espanso
         run: espanso service start --unmanaged
       - name: Log Espanso State (for debugging)
