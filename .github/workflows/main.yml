@@ -28,6 +28,8 @@ jobs:
           sudo snap install espanso --classic --channel=latest/edge
       - name: Register espanso as service
         run: espanso service register
+      - name: Install X11
+        run: sudo apt-get install xorg openbox
       - name: Start espanso as service
         run: espanso service start
       - name: Log Espanso State (for debugging)
