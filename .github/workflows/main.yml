@@ -14,27 +14,27 @@ jobs:
     strategy:
       matrix:
         ruby:
-          - '3.2.2'
+          - "3.2.2"
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby }}
-        bundler-cache: true
-    - name: Install Espanso
-      run: |
-        sudo snap install espanso --classic --channel=latest/edge
-    - name: Register espanso as service
-      run: espanso service register
-    - name: Log Espanso State (for debugging)
-      run: espanso log
-    - name: Run the default task
-      run: bundle exec rake
-    - name: RSpec
-      run: bundle exec rspec
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v3
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+      - name: Install Espanso
+        run: |
+          sudo snap install espanso --classic --channel=latest/edge
+      - name: Register espanso as service
+        run: espanso service register
+      - name: Log Espanso State (for debugging)
+        run: espanso log
+      - name: Run the default task
+        run: bundle exec rake
+      - name: RSpec
+        run: bundle exec rspec
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
