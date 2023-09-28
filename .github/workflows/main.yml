@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: mac-os-latest
     name: Ruby ${{ matrix.ruby }}
     strategy:
       matrix:
@@ -23,16 +23,10 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-      - name: Download Espanso
-        run: |
-          wget https://github.com/federico-terzi/espanso/releases/download/v2.1.8/espanso-debian-x11-amd64.deb
+      - name: Tap Espanso homebrew keg
+        run: brew tap espanso/espanso
       - name: Install Espanso
-        run: sudo apt install ./espanso-debian-x11-amd64.deb
-      - name: Register espanso as service
-        run: espanso service register
-      - name: Install X11
-        run: sudo apt-get install xorg openbox
-# Espanso start goes here if this doesnt work
+        run: brew install espanso
       - name: Log Espanso State (for debugging)
         run: espanso log
       - name: Run the default task
