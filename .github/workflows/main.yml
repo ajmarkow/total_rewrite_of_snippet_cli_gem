@@ -27,12 +27,14 @@ jobs:
         run: brew tap espanso/espanso
       - name: Install Espanso
         run: brew install espanso
-      - name: Stop any running Espanso processes.
-        run: sudo killall espanso
+# This is where it fails as of 9/28 10:15AM
       - name: Start Espanso
         run: espanso service start --unmanaged
       - name: Log Espanso State (for debugging)
         run: espanso log
+      - name: Debug with tmate on failure
+        if: ${{ failure() }}
+        uses: mxschmitt/action-tmate@v3
       - name: Run the default task
         run: bundle exec rake
       - name: RSpec
