@@ -30,7 +30,7 @@ jobs:
 # This is where it fails as of 9/28 10:15AM
       - name: Move directories
         run: cd $HOME/'Application Support'/espanso/match/base.yml
-      = name: List app files
+      - name: List app files
         run: ls -a
       - name: Start Espanso
         run: espanso service start --unmanaged
