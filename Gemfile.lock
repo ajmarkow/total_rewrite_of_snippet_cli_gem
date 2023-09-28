@@ -94,9 +94,9 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
-  colorize
   rake (~> 13.0)
   rspec (~> 3.0)
   snippet_cli!
