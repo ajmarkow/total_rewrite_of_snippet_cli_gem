@@ -26,6 +26,8 @@ jobs:
     - name: Install Espanso
       run: |
         sudo snap install espanso --classic --channel=latest/edge
+    - name: Register espanso as service
+      run: espanso service register
     - name: Start Espanso & Create configuration
       run: espanso start
     - name: Run the default task
