@@ -30,8 +30,6 @@ jobs:
       run: espanso service register
     - name: Log Espanso State (for debugging)
       run: espanso log
-    - name: Start Espanso & Create configuration
-      run: espanso start
     - name: Run the default task
       run: bundle exec rake
     - name: RSpec
