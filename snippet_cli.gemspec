@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["AJ Markow"]
   spec.email = ["alexanderjmarkow@gmail.com"]
 
-  spec.summary = "A gem that writes valid yaml mappings to use in your Espanso config"
-  spec.description = "A program to write config for https://espanso.org in a consistent fashion"
+  spec.summary = "This is a useful tool that helps you create valid YAML mappings for your Espanso configuration."
+  spec.description = "Hi there! We've got a nifty tool that can help you add to your configuration files for https://espanso.org in a consistent and organized manner. It's really handy for keeping everything in order. Read the docs at https://l.ajm.codes/snippet_docs if you'd like us to show you how it works!"
   spec.homepage = "https://l.ajm.codes/snippet_cli"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
