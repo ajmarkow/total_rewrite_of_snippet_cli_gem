@@ -23,9 +23,11 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-      - name: Install Espanso
+      - name: Download Espanso
         run: |
-          sudo snap install espanso --classic --channel=latest/edge
+          wget https://github.com/federico-terzi/espanso/releases/download/v2.1.8/espanso-debian-x11-amd64.deb
+      - name: Install Espanso
+        run: sudo apt install ./espanso-debian-x11-amd64.deb
       - name: Register espanso as service
         run: espanso service register
       - name: Install X11
