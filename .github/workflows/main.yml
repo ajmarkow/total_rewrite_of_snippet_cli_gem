@@ -32,8 +32,7 @@ jobs:
         run: espanso service register
       - name: Install X11
         run: sudo apt-get install xorg openbox
-      - name: Start espanso as service
-        run: espanso service start
+# Espanso start goes here if this doesnt work
       - name: Log Espanso State (for debugging)
         run: espanso log
       - name: Run the default task
