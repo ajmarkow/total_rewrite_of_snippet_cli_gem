@@ -23,6 +23,9 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
+    - name: Install espanso
+      run: |
+        sudo snap install espanso --classic --channel=latest/edge
     - name: Run the default task
       run: bundle exec rake
     - name: RSpec
