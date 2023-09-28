@@ -29,7 +29,7 @@ jobs:
     - name: Register espanso as service
       run: espanso service register
     - name: Start Espanso & Create configuration
-      run: espanso start
+      run: espanso restart
     - name: Run the default task
       run: bundle exec rake
     - name: RSpec
