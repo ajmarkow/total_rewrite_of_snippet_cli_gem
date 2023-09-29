@@ -1,5 +1,7 @@
 # SnippetCli  
-<img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=flat-plastic&logo=ruby&logoColor=white"  height="25">    <img src="https://img.shields.io/gem/dt/snippet_cli"  height="25">    <img src="https://img.shields.io/gem/v/snippet_cli" height="25">    <img src="https://img.shields.io/github/issues/ajmarkow/total_rewrite_of_snippet_cli_gem" height="25"> <img src="https://img.shields.io/badge/platform-macos-lightblue" height="25">
+
+<img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=flat-plastic&logo=ruby&logoColor=white"  height="25"    >   <img src="https://img.shields.io/badge/platform-macos-lightblue" height="25"><br/>
+<img src="https://img.shields.io/gem/dt/snippet_cli"  height="25">    <img src="https://img.shields.io/gem/v/snippet_cli" height="25">    <img src="https://img.shields.io/github/issues/ajmarkow/total_rewrite_of_snippet_cli_gem" height="25">
 
 - This Ruby Gem allows you to effortlessly incorporate YAML snippets into your Espanso configuration with ease and consistency.
 - This is A Command line interface, aka CLI. It writes directly to your base.yml (Default Configuration File) in Espanso.
@@ -13,11 +15,11 @@
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add snippet_cli
+    bundle add snippet_cli
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install snippet_cli
+    gem install snippet_cli
 
 ## Usage
 
@@ -31,7 +33,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/ajmarkow/snippet_cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ajmarkow/snippet_cli/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at <https://github.com/ajmarkow/snippet_cli>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ajmarkow/snippet_cli/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
