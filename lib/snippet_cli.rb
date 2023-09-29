@@ -15,5 +15,4 @@ module SnippetCli
     new_obj = {"student" => obj["person"]}
     YAML.dump(new_obj)
   end
-puts output
 end
