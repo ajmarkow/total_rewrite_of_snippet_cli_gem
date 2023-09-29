@@ -6,6 +6,7 @@
 - This Ruby Gem allows you to effortlessly incorporate YAML snippets into your Espanso configuration with ease and consistency.
 - This is A Command line interface, aka CLI. It writes directly to your base.yml (Default Configuration File) in Espanso.
 - Built to be used with the application [Espanso](https://espanso.org).
+- This gem is not associated with any node gem with the same name.
 
 ## Compatibility
 
