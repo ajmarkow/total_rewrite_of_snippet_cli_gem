@@ -9,4 +9,10 @@ module SnippetCli
     # Retrieves Espanso config path, appends folder name + main YAML filename to get file path to append snippets to.
     `espanso path config`.chomp + "/match/base.yml"
   end
+
+  def 
+    obj = YAML.load(input)
+    new_obj = {"student" => obj["person"]}
+    output = YAML.dump(new_obj)
+puts output
 end

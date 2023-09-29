@@ -5,8 +5,7 @@ require "./lib/snippet_cli"
 RSpec.describe SnippetCli do
   it "Should have a version number." do
     expect(SnippetCli::VERSION).not_to be nil
-        puts "↳ TEST NOTE: As of 9/28/23, 0.1.0"
-
+    puts "↳ TEST NOTE: As of 9/28/23, 0.1.0"
   end
 
   it "Should return the path of config file on mac." do

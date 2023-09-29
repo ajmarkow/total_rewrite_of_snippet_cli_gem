@@ -2,6 +2,7 @@
 
 require "snippet_cli"
 require "Simplecov"
+
 SimpleCov.start
 
 RSpec.configure do |config|
