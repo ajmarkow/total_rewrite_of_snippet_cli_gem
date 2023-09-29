@@ -1,26 +1,19 @@
 # SnippetCli  
 <img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=flat-plastic&logo=ruby&logoColor=white"  height="25">    <img src="https://img.shields.io/gem/dt/snippet_cli"  height="25">    <img src="https://img.shields.io/gem/v/snippet_cli" height="25">    <img src="https://img.shields.io/github/issues/ajmarkow/total_rewrite_of_snippet_cli_gem" height="25"> 
 
-
-
-
-
-
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/snippet_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
+- This Ruby Gem allows you to effortlessly incorporate YAML snippets into your Espanso configuration with ease and consistency.
+- This is A CLI that writes directly to your base.yml Espanso config.
+- Built to be used with the application [Espanso](https://espanso.org).
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ bundle add snippet_cli
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ gem install snippet_cli
 
 ## Usage
 
@@ -34,7 +27,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/snippet_cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/snippet_cli/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/ajmarkow/snippet_cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/ajmarkow/snippet_cli/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -42,4 +35,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the SnippetCli project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/snippet_cli/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the SnippetCli project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ajmarkow/snippet_cli/blob/master/CODE_OF_CONDUCT.md).
