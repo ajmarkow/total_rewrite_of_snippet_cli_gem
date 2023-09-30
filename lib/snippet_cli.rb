@@ -12,7 +12,7 @@ module SnippetCli
 
   def yaml_dump
     obj = YAML.safe_load(input)
-    new_obj = {"student" => obj["person"]}
+    new_obj = {"data-for-output" => obj["snippet"]}
     YAML.dump(new_obj)
   end
 end
