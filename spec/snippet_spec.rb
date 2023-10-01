@@ -52,7 +52,7 @@ RSpec.describe "↳ TEST NOTE: Should integrate with dry-validation library to v
   it { is_expected.to validate(:vars, :optional) }
   it { is_expected.to validate(:word, :optional).macro_use?(:word) }
   it { is_expected.to validate(:propagate_case, :optional).macro_use?(:propagate_case) }
-  
+
   it "is expected to throw an error if you provide two triggers for a regex snipet." do
     snippet = Snippet.new
     puts "↳ TEST NOTE: Checks if contents_of_trigger length is limited if trigger_type is regex"

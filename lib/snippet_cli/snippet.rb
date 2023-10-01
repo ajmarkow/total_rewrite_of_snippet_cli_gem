@@ -35,7 +35,7 @@ class Snippet < Dry::Validation::Contract
   end
 
   rule(:trigger_type, :contents_of_trigger) do |trigger_type, contents_of_trigger|
-    key.failure("I'm sorry, but a regex snippet can only have one trigger.") if values[:trigger_type] == 'regex'
+    key.failure("I'm sorry, but a regex snippet can only have one trigger.") if values[:trigger_type] == "regex"
   end
 
   rule(:propagate_case, :replace_type) do
