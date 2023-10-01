@@ -15,13 +15,9 @@
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
+Install the gem by executing:
 
-    bundle add snippet_cli
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    gem install snippet_cli
+    gem install --user-install snippet_cli
 
 ## Usage
 
