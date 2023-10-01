@@ -10,6 +10,7 @@
 ## Compatibility
 
 - Built specifically to be used on MacOS.
+- This software requires Espanso version 2 or above and is not compatible with older versions..
 
 ## Installation
 
