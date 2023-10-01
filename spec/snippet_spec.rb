@@ -57,6 +57,8 @@ RSpec.describe "↳ TEST NOTE: Should integrate with dry-validation library to v
     snippet = Snippet.new
     puts "↳ TEST NOTE: Checks if contents_of_trigger length is limited if trigger_type is regex"
     snippet_validated = snippet.call(trigger_type: "regex", contents_of_trigger: ["a", "b"], replace_type: "replace", contents_of_replace: "ahey")
+    error_message = snippet_validated.errors.to_h[:trigger_type]
     expect(snippet_validated.failure?).to eq(true)
+    expect(error_message[0]).to eq("I'm sorry, but a regex snippet can only have one trigger.")
   end
 end
