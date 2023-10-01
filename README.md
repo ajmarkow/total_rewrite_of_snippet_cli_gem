@@ -1,6 +1,7 @@
 # SnippetCli  
 <!-- markdownlint-disable MD033 -->
-<img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=flat-plastic&logo=ruby&logoColor=white"  height="25"    >   <img src="https://img.shields.io/badge/platform-macos-lightblue" height="25"><br/>
+<img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=flat-plastic&logo=ruby&logoColor=white"  height="25"    >   <img src="https://img.shields.io/badge/platform-macos-lightblue" height="25">    <img src="https://img.shields.io/badge/coverage-%2094.93-green?style=flat-plastic&logo=ruby" height="25">
+<br/>
 <img src="https://img.shields.io/gem/dt/snippet_cli"  height="25">    <img src="https://img.shields.io/gem/v/snippet_cli" height="25">    <img src="https://img.shields.io/github/issues/ajmarkow/total_rewrite_of_snippet_cli_gem" height="25">
 
 - This Ruby Gem allows you to effortlessly incorporate YAML snippets into your Espanso configuration with ease and consistency.
