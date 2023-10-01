@@ -6,7 +6,7 @@
 - This is A Command line interface, aka CLI.
 - It writes directly to your base.yml (Default Configuration File) in Espanso.
 - Built to be used with the application [Espanso](https://espanso.org).
-- This gem is not associated with any node gem with the same name.
+- This gem is not associated with any node/npm package of the same name.
 
 ## Compatibility
 
