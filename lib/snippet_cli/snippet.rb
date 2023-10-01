@@ -2,7 +2,6 @@ require "dry-validation"
 
 class Snippet < Dry::Validation::Contract
   # Setting for dry-validation that makes explicit type definitions required
-  # configure { config.type_specs = true }
 
   module TriggerTypes
     include Dry::Types(default: :strict)
@@ -16,7 +15,7 @@ class Snippet < Dry::Validation::Contract
 
   module VarTypes
     include Dry::Types(default: :strict)
-    TypeOptions = String.enum("clipboard", "choice", "date", "echo", "form", "random", "script", "shell")
+    ExtensionTypes = String.enum("clipboard", "choice", "date", "echo", "form", "random", "script", "shell")
   end
 
   schema do
@@ -28,13 +27,16 @@ class Snippet < Dry::Validation::Contract
     optional(:propagate_case).value(:bool?)
     optional(:vars).hash
   end
-=begin
-  rule(word_key_absence: [:trigger_type, :word]) do |trigger_type, word|
-    trigger_type.value(eql?: "image_path").then(word.none?)
+
+  rule(:word, :replace_type) do
+    if key?(:replace_type) && key?(:word) && replace_type.eql?(value("image_path"))
+      base.failure("I'm sorry, but the word boolean setting cannot be applied to an image snippet.")
+    end
   end
 
-  rule(propagate_case_key_absence: [:trigger_type, :propagate_case]) do |trigger_type, propagate_case|
-    trigger_type.value(eql?: "image_path").then(propagate_case.none?)
+  rule(:propagate_case, :replace_type) do
+    if key?(:replace_type) && key?(:word) && replace_type.eql?(value("image_path"))
+      base.failure("I'm sorry, but the propagate_case boolean setting cannot be applied to an image snippet.")
+    end
   end
-=end
 end

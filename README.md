@@ -43,3 +43,9 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the SnippetCli project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ajmarkow/snippet_cli/blob/master/CODE_OF_CONDUCT.md).
+
+### TO-DO
+
+- [json schema in rspec](https://thoughtbot.com/blog/validating-json-schemas-with-an-rspec-matcher)
+- [yaml structures vs ruby](https://yaml.org/YAML_for_ruby.html)
+- [safe yaml](https://github.com/dtao/safe_yaml) ???

@@ -34,7 +34,6 @@ Gem::Specification.new do |spec|
   # Uncomment to register a new dependency of your gem
   spec.add_dependency "dry-validation"
   spec.add_dependency "json-schema"
-  spec.add_dependency "shale", "~> 1.0"
   spec.add_dependency "thor"
   spec.add_dependency "tty-prompt"
 

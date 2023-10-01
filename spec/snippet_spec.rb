@@ -16,6 +16,18 @@ end
 RSpec.describe "↳ TEST NOTE: Should integrate with dry-validation library to validate schema", type: %i[dry_validation] do
   subject(:schema_class) do
     Class.new(Dry::Validation::Contract) do
+      register_macro(:word) do
+        if key?(:replace_type) && key?(:word) && replace_type.eql?(value("image_path"))
+          base.failure("I'm sorry, but the word boolean setting cannot be applied to an image snippet.")
+        end
+      end
+
+      register_macro(:propagate_case) do
+        if key?(:replace_type) && key?(:word) && replace_type.eql?(value("image_path"))
+          base.failure("I'm sorry, but the propagate_case boolean setting cannot be applied to an image snippet.")
+        end
+      end
+
       params do
         required(:trigger_type).value(TriggerTypes::TypeOptions).filled(:string)
         required(:contents_of_trigger).value(:array, min_size?: 1)
@@ -25,6 +37,9 @@ RSpec.describe "↳ TEST NOTE: Should integrate with dry-validation library to v
         optional(:propagate_case).value(:bool?)
         optional(:vars).hash
       end
+
+      rule(:word).validate(:word)
+      rule(:propagate_case).validate(:propagate_case)
     end
   end
 
@@ -35,4 +50,6 @@ RSpec.describe "↳ TEST NOTE: Should integrate with dry-validation library to v
   it { is_expected.to validate(:word, :optional) }
   it { is_expected.to validate(:propagate_case, :optional) }
   it { is_expected.to validate(:vars, :optional) }
+  it { is_expected.to validate(:word, :optional).macro_use?(:word) }
+  it { is_expected.to validate(:propagate_case, :optional).macro_use?(:propagate_case) }
 end

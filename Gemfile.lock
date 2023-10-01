@@ -4,7 +4,6 @@ PATH
     snippet_cli (0.1.0)
       dry-validation
       json-schema
-      shale (~> 1.0)
       thor
       tty-prompt
 
@@ -100,7 +99,6 @@ GEM
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.13.0)
-    shale (1.0.0)
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
