@@ -34,6 +34,10 @@ class Snippet < Dry::Validation::Contract
     end
   end
 
+  rule(:trigger_type, :contents_of_trigger) do |trigger_type, contents_of_trigger|
+    key.failure("I'm sorry, but a regex snippet can only have one trigger.") if values[:trigger_type] == 'regex'
+  end
+
   rule(:propagate_case, :replace_type) do
     if key?(:replace_type) && key?(:word) && replace_type.eql?(value("image_path"))
       base.failure("I'm sorry, but the propagate_case boolean setting cannot be applied to an image snippet.")

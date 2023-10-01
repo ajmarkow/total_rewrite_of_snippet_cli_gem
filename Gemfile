@@ -14,3 +14,5 @@ gem "standard", "~> 1.3", require: false, group: :test
 gem "simplecov", require: false, group: :test
 
 gem "dry-validation-matchers", group: :test
+
+gem "rspec-collection_matchers", group: :test
