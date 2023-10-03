@@ -8,3 +8,5 @@ RSpec::Core::RakeTask.new(:spec)
 require "standard/rake"
 
 task default: %i[spec standard]
+
+Rake.add_rakelib "lib/tasks"

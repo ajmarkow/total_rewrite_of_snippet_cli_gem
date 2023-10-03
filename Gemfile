@@ -13,6 +13,10 @@ gem "standard", "~> 1.3", require: false, group: :test
 
 gem "simplecov", require: false, group: :test
 
-gem "dry-validation-matchers", group: :test
+gem "dry-validation-matchers", require: false, group: :test
 
-gem "rspec-collection_matchers", group: :test
+gem "rspec-collection_matchers", require: false, group: :test
+
+gem "simplecov-cobertura", require: false, group: :test
+
+gem "codecov", require: false, group: :test
