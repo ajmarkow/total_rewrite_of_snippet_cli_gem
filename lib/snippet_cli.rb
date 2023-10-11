@@ -7,7 +7,7 @@ module SnippetCli
 
   def self.config_path
     # Retrieves Espanso config path, appends folder name + main YAML filename to get file path to append snippets to.
-    `espanso path config`.chomp + "/match/base.yml"
+    "#{`espanso path config`.chomp}/match/base.yml"
   end
 
   def yaml_dump
