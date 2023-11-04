@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
+require "aruba/rspec"
 require "snippet_cli"
 require "Simplecov"
+
 
 SimpleCov.start
 

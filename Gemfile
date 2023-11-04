@@ -18,3 +18,5 @@ gem "rspec-collection_matchers", require: false, group: :test
 gem "simplecov-cobertura", require: false, group: :test
 
 gem "codecov", require: false, group: :test
+
+gem "aruba", require: false, group: :test

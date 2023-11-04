@@ -10,8 +10,8 @@ module SnippetCli
     "#{`espanso path config`.chomp}/match/base.yml"
   end
 
-  def yaml_dump
-    obj = YAML.safe_load(input)
+  def export_as_yaml(validated_input)
+    obj = YAML.safe_load(validated_input)
     new_obj = {"data-for-output" => obj["snippet"]}
     YAML.dump(new_obj)
   end
